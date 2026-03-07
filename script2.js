@@ -42,7 +42,8 @@ card6Icon.addEventListener("click",()=>{
 })
 
 // for resume
-const resumeIcon=document.querySelector(".resume")
-resumeIcon.addEventListener("click",()=>{
-    window.open("../resume/NAVEEN NEGI-resume (4).pdf","-blank");
-})
+const resumeIcon = document.querySelector(".resume");
+
+resumeIcon.addEventListener("click", () => {
+    window.open("resume/NAVEEN-NEGI-resume.pdf", "-blank");
+});
