@@ -16,5 +16,5 @@ btn.addEventListener("click",()=>{
 const resumeIcon = document.querySelector(".resume");
 
 resumeIcon.addEventListener("click", () => {
-    window.open("resume/NAVEEN-NEGI-resume.pdf", "-blank");
+    window.open("./resume/NAVEEN-NEGI-resume.pdf", "-blank");
 });
