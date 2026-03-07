@@ -1,14 +1,14 @@
 const btnIcon=document.querySelectorAll(".btn")
 btnIcon.forEach((btn)=>{
 btn.addEventListener("click",()=>{
-  window.location.href = "index2.html";
+  window.location.href = "about1.html";
   })
 })
 
 const aboutIcon=document.querySelectorAll(".about")
 aboutIcon.forEach((about)=>{
 about.addEventListener("click",()=>{
-  window.location.href = "index3.html";
+  window.location.href = "about2.html";
   })
 })
 
