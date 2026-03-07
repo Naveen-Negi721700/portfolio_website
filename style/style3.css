@@ -1,0 +1,154 @@
+:root {
+    --bg-dark: #0a0e14;
+    --accent-blue: #00d2ff;
+    --accent-purple: #9d50bb;
+    --text-gray: #b0b3b8;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+.about-section {
+    padding: 80px 10%;
+    background: #212121;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.section-title span { color: var(--text-gray); font-weight: 300; }
+
+.about-content {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    align-items: flex-start;
+    
+}
+
+/* Profile Card Styling */
+.profile-card {
+    flex: 1;
+    text-align: center;
+}
+
+.image-wrapper {
+    position: relative;
+    padding: 7px;
+    border-radius: 20px;
+    background: #ffffff;
+    width: 70%;
+    margin: 28px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+/* Skills & Bars */
+.skill-bar {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+}
+
+.bar {
+    background: #1e2229;
+    height: 8px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+}
+
+/* Button with Glow */
+.btn-contact {
+    background: linear-gradient(90deg, #6dd5ed, #2193b0);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+    transition: 0.3s;
+}
+
+.btn-contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.6);
+}
+.details-card{
+    width: 70%;
+}
+.skills{
+    display: flex;
+    gap: 20%;
+}
+.skill2{
+    gap: 10px;
+}
+
+.navlist{
+    display: flex;
+    gap: 25px;
+    left: 10px;
+    justify-content: center;
+    height: 13vh;
+    width: 96%;
+    align-items: center;
+    position: fixed;
+       list-style: none;
+       top: -13px;
+       background-color: #181818;
+       top: -15px;
+    z-index: 10;
+    border-radius: 20px;
+}
+ 
+
+.navlist .nav{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.navlist .nav-a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #ffff;
+}
+
+.nav{
+    padding: 6px 19px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.nav:hover{
+    border: 2px solid white;
+    background: linear-gradient(#ffff , #3877ff);
+    color: black;
+}
+
+.nav3{
+    border: 2px solid white;
+    background: linear-gradient(#ffff , #3877ff);
+    color: black;
+}
+
+.resume{
+    cursor: pointer;
+}

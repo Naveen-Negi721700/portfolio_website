@@ -6,5 +6,7 @@ A personal portfolio website built using HTML and CSS to showcase my projects, s
 - HTML
 - CSS
 
+# Live
+https://naveen-negi721700.github.io/portfolio_website/
 ## Author
 Naveen Negi
