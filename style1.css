@@ -81,6 +81,7 @@ align-items: center;
     max-width: 38rem;
     margin: 1.1rem 0 3rem 0;
     line-height: 1.8rem;
+    margin-right:10px ;
 }
 .btn-container button{
     border: .1rem solid #5db9ee;
