@@ -12,8 +12,8 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-main);
-}
-
+} 
+  
 .dashboard-container {
     display: flex;
     min-height: 100vh;
@@ -25,10 +25,14 @@ body {
     background: rgba(0, 0, 0, 0.3);
     border-right: 1px solid var(--border-color);
     padding: 2rem;
-    display: flex;
+    display: block;
     flex-direction: column;
     gap: 2rem;
 }
+
+/* .sidebarr{
+    display: block;
+} */
 
 .sidebar nav a {
     display: block;
@@ -125,6 +129,7 @@ body {
        top: -13px;
        z-index: 10;
 }
+
  
 
 .navlist .nav{
@@ -167,4 +172,125 @@ body {
 }
 .resume{
     cursor: pointer;
+}
+
+
+
+
+
+:root {
+    --nav-bg: #1a1a1a;
+    --nav-accent: #00d2ff;
+    --icon-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    /* background-color: #f0f0f0; Just for contrast */
+}
+
+.icon-navbar {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--nav-bg);
+    display: flex ;    
+    flex-direction: row;
+    padding: 15px 10px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    z-index: 1000;
+    width: 87vw;
+}
+
+
+
+.nav-item {
+    color: var(--icon-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 15px 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-item:hover {
+    color: var(--nav-accent);
+    transform: scale(1.2);
+}
+
+/* Tooltip (Name appears on hover) */
+.tooltip {
+    position: absolute;
+    left: 50px;
+    background: var(--nav-bg);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.nav-item:hover .tooltip {
+    opacity: 1;
+    left: 60px;
+}
+
+/* Mobile View: Moves to bottom of screen */
+@media (max-width: 1000px) {
+    .icon-navbar {
+            display: flex;
+    justify-content: center;
+    align-items: center;
+         gap: 2vh;
+        left: 50%;
+        top: 24px;
+        bottom: auto;
+        transform: translateX(-50%);
+        flex-direction: row;
+        padding: 10px 20px;
+    }
+    
+    .nav-item {
+        margin: 5px 15px;
+    }
+
+    .tooltip {
+        display: none; /* Hide tooltips on mobile */
+    }
+}
+
+
+
+
+
+.navicon{
+    display: block;
+}
+.nav-icon{
+    display: none;
+}
+@media (max-width: 1000px) {
+    .nav-icon{
+        display: block;
+    }
+    .navicon{
+        display: none;
+    }
+    .navdiv{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+
 }

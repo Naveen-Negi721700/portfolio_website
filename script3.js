@@ -3,7 +3,7 @@ homeIcon.forEach((home)=>{
 home.addEventListener("click",()=>{
   window.location.href = "index.html";
   })
-})
+}) 
 
 const btnIcon=document.querySelectorAll(".btn")
 btnIcon.forEach((btn)=>{
@@ -12,9 +12,17 @@ btn.addEventListener("click",()=>{
   })
 })
 
+const contactIcon=document.querySelectorAll(".btncontact")
+contactIcon.forEach((btncontact)=>{
+btncontact.addEventListener("click",()=>{
+  window.location.href = "contact.html";
+  })
+})
+
+
 // for resume
 const resumeIcon = document.querySelector(".resume");
 
 resumeIcon.addEventListener("click", () => {
-    window.open("./resume/NAVEEN-NEGI-resume.pdf", "-blank");
+    window.open("NAVEEN NEGI-resume (4).pdf", "_blank");
 });

@@ -74,7 +74,7 @@ body {
 }
 
 /* Button with Glow */
-.btn-contact {
+.btncontact {
     background: linear-gradient(90deg, #6dd5ed, #2193b0);
     border: none;
     padding: 15px 40px;
@@ -86,7 +86,7 @@ body {
     transition: 0.3s;
 }
 
-.btn-contact:hover {
+.btncontact:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(0, 210, 255, 0.6);
 }
@@ -101,6 +101,11 @@ body {
     gap: 10px;
 }
 
+
+
+.navdiv{
+    display: block;
+}
 .navlist{
     display: flex;
     gap: 25px;
@@ -151,4 +156,138 @@ body {
 
 .resume{
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+:root {
+    --nav-bg: #1a1a1a;
+    --nav-accent: #00d2ff;
+    --icon-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f0f0; /* Just for contrast */
+}
+
+.icon-navbar {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--nav-bg);
+    display: flex ;
+    flex-direction: row;
+    padding: 15px 10px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    z-index: 1000;
+    width: 87vw;
+}
+
+.navicon{
+    display: none;
+}
+
+.nav-item {
+    color: var(--icon-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 15px 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-item:hover {
+    color: var(--nav-accent);
+    transform: scale(1.2);
+}
+
+/* Tooltip (Name appears on hover) */
+.tooltip {
+    position: absolute;
+    left: 50px;
+    background: var(--nav-bg);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.nav-item:hover .tooltip {
+    opacity: 1;
+    left: 60px;
+}
+
+/* Mobile View: Moves to bottom of screen */
+@media (max-width: 768px) {
+    .icon-navbar {
+            display: flex;
+    justify-content: center;
+    align-items: center;
+         gap: 2vh;
+        left: 50%;
+        top: 2px;
+        bottom: auto;
+        transform: translateX(-50%);
+        flex-direction: row;
+        padding: 10px 20px;
+    }
+    
+    .nav-item {
+        margin: 5px 15px;
+    }
+
+    .tooltip {
+        display: none; /* Hide tooltips on mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .about-content{
+        display: block;
+    }
+    .profile-card {
+        margin-left: 30px;
+    }
+    .details-card{
+        width: 100%;
+    }
+    .skills{
+        display: block;
+    }
+}
+
+@media (max-width: 665px) {
+    .navicon{
+        display: block;
+    }
+    .navdiv{
+        display: none;
+    }
+
 }

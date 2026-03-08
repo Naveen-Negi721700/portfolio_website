@@ -3,15 +3,15 @@ homeIcon.forEach((home)=>{
 home.addEventListener("click",()=>{
   window.location.href = "index.html";
   })
-})
+}) 
 
 const aboutIcon=document.querySelectorAll(".about")
 aboutIcon.forEach((about)=>{
 about.addEventListener("click",()=>{
   window.location.href = "about2.html";
   })
-})
-
+}) 
+ 
 const card1Icon=document.querySelector(".card1")
 card1Icon.addEventListener("click",()=>{
     window.open("https://naveen-negi721700.github.io/Music_Web_Player/","-blank");
@@ -45,5 +45,5 @@ card6Icon.addEventListener("click",()=>{
 const resumeIcon = document.querySelector(".resume");
 
 resumeIcon.addEventListener("click", () => {
-    window.open("./resume/NAVEEN-NEGI-resume.pdf", "-blank");
+    window.open("http://127.0.0.1:3000/NAVEEN-NEGI-resume.pdf", "-blank");
 });

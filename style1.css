@@ -97,7 +97,7 @@ button:nth-child(2)
 {
     background-color: transparent;
     color: #5db9ee;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }
 button:nth-child(1):hover{
     background-color: transparent;
@@ -158,13 +158,188 @@ button:nth-child(2):hover{
 
 
 
-/* jacascript */
+.circle{
+    display: block;
+}
+.right-container{
+     display: block;
+}
 
-.linkedin, .gitHub, .leetcode, .gfg, .btn, .about, .resume{
-    cursor: pointer;
+
+@media (max-width: 1479px) {
+
+    .circle{
+    display: none;
+}
+.right-container{
+     display: none;
+}
+.left-container{
+width: 100%;
+}
+.icon{
+        left: 10px;
+    position: absolute;
+    top: 250px;
+}
+.content {
+    margin-left: 2rem;
+}
+}
+@media (max-width: 486px) {
+    .btn-container{
+            display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-right: 48px;
+    
+    }
+    /* .button:nth-child(2){
+        margin-left: 0rem;
+    } */
+}
+
+@media (max-width: 650px){
+.icon{
+        left: 10px;
+    position: absolute;
+    top: 237px;
+    ;
+}
+
+/* .navicon{
+    display: block;
+} */
+
 }
 
 
 
 
 
+
+
+
+
+
+
+:root {
+    --nav-bg: #1a1a1a;
+    --nav-accent: #00d2ff;
+    --icon-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f0f0; /* Just for contrast */
+}
+
+.icon-navbar {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--nav-bg);
+    display: flex ;
+    flex-direction: row;
+    padding: 15px 10px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    z-index: 1000;
+    width: 87vw;
+}
+
+.navicon{
+    display: none;
+}
+
+
+.nav-item {
+    color: var(--icon-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 15px 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-item:hover {
+    color: var(--nav-accent);
+    transform: scale(1.2);
+}
+
+/* Tooltip (Name appears on hover) */
+.tooltip {
+    position: absolute;
+    left: 50px;
+    background: var(--nav-bg);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.nav-item:hover .tooltip {
+    opacity: 1;
+    left: 60px;
+}
+
+/* Mobile View: Moves to bottom of screen */
+@media (max-width: 768px) {
+    .icon-navbar {
+            display: flex;
+    justify-content: center;
+    align-items: center;
+         gap: 2vh;
+        left: 50%;
+        top: 40px;
+        bottom: auto;
+        transform: translateX(-50%);
+        flex-direction: row;
+        padding: 10px 20px;
+    }
+    
+    .nav-item {
+        margin: 5px 15px;
+    }
+
+    .tooltip {
+        display: none; /* Hide tooltips on mobile */
+    }
+
+    
+.navicon{
+    display: block;
+}
+.navlist{
+    display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* jacascript */
+
+.linkedin, .gitHub, .leetcode, .gfg, .btn, .about, .resume{
+    cursor: pointer;
+}

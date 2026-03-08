@@ -12,6 +12,9 @@ about.addEventListener("click",()=>{
   })
 })
 
+
+
+
 const linkedinIcon=document.querySelector(".linkedin")
 linkedinIcon.addEventListener("click",()=>{
     window.open("https://www.linkedin.com/in/naveen-negi-423429326/","-blank");
@@ -41,7 +44,7 @@ gfgIcon.addEventListener("click",()=>{
 const resumeIcon = document.querySelector(".resume");
 
 resumeIcon.addEventListener("click", () => {
-    window.open("./resume/NAVEEN-NEGI-resume.pdf", "-blank");
+    window.open("http://127.0.0.1:3000/NAVEEN-NEGI-resume.pdf", "-blank");
 });
 
 
