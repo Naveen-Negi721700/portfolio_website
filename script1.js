@@ -44,8 +44,17 @@ gfgIcon.addEventListener("click",()=>{
 const resumeIcon = document.querySelector(".resume");
 
 resumeIcon.addEventListener("click", () => {
-    window.open("http://127.0.0.1:3000/NAVEEN-NEGI-resume.pdf", "-blank");
+    window.open("NAVEEN NEGI-resume (4).pdf", "-blank");
 });
+
+const fileiconIcon = document.querySelector(".fileicon");
+
+fileiconIcon.addEventListener("click", () => {
+    window.open("NAVEEN NEGI-resume (4).pdf", "-blank");
+});
+
+
+
 
 
 

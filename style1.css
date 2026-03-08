@@ -181,7 +181,7 @@ width: 100%;
 .icon{
         left: 10px;
     position: absolute;
-    top: 250px;
+    
 }
 .content {
     margin-left: 2rem;
@@ -326,6 +326,9 @@ body {
 }
 }
 
+.fileicon{
+    cursor: pointer;
+}
 
 
 

@@ -24,5 +24,14 @@ btncontact.addEventListener("click",()=>{
 const resumeIcon = document.querySelector(".resume");
 
 resumeIcon.addEventListener("click", () => {
-    window.open("NAVEEN NEGI-resume (4).pdf", "_blank");
+    window.open("NAVEEN NEGI-resume (4).pdf", "-blank");
 });
+
+
+const fileiconIcon = document.querySelector(".fileicon");
+
+fileiconIcon.addEventListener("click", () => {
+    window.open("NAVEEN NEGI-resume (4).pdf", "-blank");
+});
+
+
