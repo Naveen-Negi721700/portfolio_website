@@ -186,6 +186,78 @@ width: 100%;
 .content {
     margin-left: 2rem;
 }
+.left-container{
+  background-color: transparent;
+ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    
+    background: linear-gradient(125deg, #050505, #0a0a12, #1a1a2e, #0f0c29);
+    background-size: 400% 400%;
+    
+    animation: gradientMove 3s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bg-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px; /* Grid effect */
+    opacity: 0.3;
+}
+
+.contentt {
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: -2px;
+    margin-bottom: 1rem;
+    background: linear-gradient(to bottom, #fff, #888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 }
 @media (max-width: 486px) {
     .btn-container{
@@ -194,6 +266,10 @@ width: 100%;
     gap: 13px;
     margin-right: 48px;
     
+    }
+    .content{
+        position: relative;
+    top: 10vh;
     }
     /* .button:nth-child(2){
         margin-left: 0rem;
@@ -347,3 +423,9 @@ body {
 .linkedin, .gitHub, .leetcode, .gfg, .btn, .about, .resume{
     cursor: pointer;
 }
+
+
+
+
+
+
