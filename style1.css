@@ -268,8 +268,12 @@ h1 {
     
     }
     .content{
-        position: relative;
-    top: 10vh;
+          text-align: left;
+    max-width: 600px;
+    margin-left: 2rem;
+    position: relative;
+    top: 4vh;
+}
     }
     /* .button:nth-child(2){
         margin-left: 0rem;
